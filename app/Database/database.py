@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 from ..config import settings
 
-SQLALCHEMY_DATABASE_URL = f'postgresql://{settings.Database_name}:{settings.Database_password}@{settings.Database_host}/Delivery'
+SQLALCHEMY_DATABASE_URL = f"postgresql://{settings.Database_name}:{settings.Database_password}@{settings.Database_host}/Delivery"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
