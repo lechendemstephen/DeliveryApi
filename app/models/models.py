@@ -22,7 +22,7 @@ class MenuItem(Base):
     __tablename__ = 'menuitem'
     id = Column(Integer, primary_key=True, nullable=False, unique=True)
     name = Column(String, nullable=False)
-    category = Column(Integer, ForeignKey('category.id', ondelete='CASCADE'), unique=True)
+    category = Column(Integer, ForeignKey('category.id', ondelete='CASCADE'))
     price = Column(BigInteger, nullable=False)
     is_available = Column(Boolean, default=True)
 

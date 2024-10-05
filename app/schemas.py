@@ -27,3 +27,4 @@ class Menu(BaseModel):
     price: int 
     is_available: bool
 
+
